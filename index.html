@@ -109,10 +109,35 @@
     <i class="fas fa-chevron-up"></i>
   </button>
 
+  <!-- Sticky Top Navigation Bar -->
+  <nav class="site-nav" id="site-nav">
+    <div class="site-nav-inner">
+      <a href="#overview" class="nav-brand">
+        <img src="static/images/favicon.svg" alt="X-TPL Logo" width="28" height="28">
+        <span>X-TPL</span>
+        <span class="nav-brand-badge">Showcase</span>
+      </a>
+      <ul class="nav-links">
+        <li class="nav-link-item"><a href="#overview">Overview</a></li>
+        <li class="nav-link-item"><a href="#why-tools-fail">Why Tools Fail</a></li>
+        <li class="nav-link-item"><a href="#video-showcase">Video</a></li>
+        <li class="nav-link-item"><a href="#dataset-variations">Dataset</a></li>
+        <li class="nav-link-item"><a href="#curation-pipeline">Pipeline</a></li>
+        <li class="nav-link-item"><a href="#dataset-access">Download</a></li>
+      </ul>
+      <div>
+        <a href="https://github.com/x-tpl" target="_blank" class="button is-dark is-small nav-action-btn">
+          <span class="icon"><i class="fab fa-github"></i></span>
+          <span>GitHub</span>
+        </a>
+      </div>
+    </div>
+  </nav>
+
   <main id="main-content">
     
     <!-- Hero / Header Section -->
-    <section class="hero">
+    <section class="hero" id="overview">
       <div class="hero-body">
         <div class="container is-max-desktop">
           <div class="columns is-centered">
@@ -271,6 +296,124 @@
             </div>
           </div>
         </div>
+      </div>
+    </section>
+
+    <!-- Why Existing Native Tools Fail: Runtime Stack Matrix -->
+    <section class="section" id="why-tools-fail">
+      <div class="container is-max-desktop">
+        
+        <div class="has-text-centered" style="margin-bottom: 2rem;">
+          <h2 class="title is-3">Why Existing Native Tools Fail</h2>
+          <p class="subtitle" style="font-size: 1.05rem; color: var(--text-secondary);">
+            State-of-the-art native Android TPL detectors (LibScout, LibRadar, LibScan, LibMD) only inspect Dalvik/ART bytecode (<code>classes.dex</code>), leaving hybrid ecosystems completely invisible.
+          </p>
+        </div>
+
+        <div class="matrix-card">
+          <div class="matrix-table-wrapper">
+            <table class="matrix-table">
+              <thead>
+                <tr>
+                  <th>Ecosystem / Framework</th>
+                  <th>Where TPLs Reside in APK</th>
+                  <th>Execution Runtime</th>
+                  <th>Resolved Manifest</th>
+                  <th>Native TPL Detection Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr style="background: #f8fafc; font-style: italic;">
+                  <td>
+                    <strong>Traditional Native</strong><br>
+                    <small class="text-muted">Java / Kotlin</small>
+                  </td>
+                  <td><code>classes.dex</code> (Dalvik Bytecode)</td>
+                  <td>Android Runtime (ART)</td>
+                  <td><code>build.gradle</code> (Maven)</td>
+                  <td>
+                    <span class="status-badge-ok">
+                      <i class="fas fa-check-circle"></i> Visible (Standard Dex)
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="framework-badge">
+                      <i class="fab fa-flutter" style="color: #02569B;"></i> <strong>Flutter</strong>
+                    </span>
+                  </td>
+                  <td><code>lib/arm64-v8a/libapp.so</code> (Native AOT Machine Code)</td>
+                  <td>Dart Virtual Machine &amp; Engine</td>
+                  <td><code>package_config.json</code> (pub)</td>
+                  <td>
+                    <span class="status-badge-fail">
+                      <i class="fas fa-eye-slash"></i> Blind (Native Shared Object)
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="framework-badge">
+                      <i class="fab fa-react" style="color: #61DAFB;"></i> <strong>React Native</strong>
+                    </span>
+                  </td>
+                  <td><code>assets/index.android.bundle</code> (JS Bytecode / Bundle)</td>
+                  <td>Hermes / JavaScriptCore</td>
+                  <td><code>package-lock.json</code> (npm/yarn)</td>
+                  <td>
+                    <span class="status-badge-fail">
+                      <i class="fas fa-eye-slash"></i> Blind (JavaScript Bundle)
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="framework-badge">
+                      <i class="fas fa-mobile-alt" style="color: #E68523;"></i> <strong>Apache Cordova</strong>
+                    </span>
+                  </td>
+                  <td><code>assets/www/</code> (HTML5, JS &amp; Cordova Plugins)</td>
+                  <td>Android System WebView</td>
+                  <td><code>plugins.json</code> / <code>package.json</code></td>
+                  <td>
+                    <span class="status-badge-fail">
+                      <i class="fas fa-eye-slash"></i> Blind (WebView Assets)
+                    </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <span class="framework-badge">
+                      <i class="fas fa-cubes" style="color: #512BD4;"></i> <strong>.NET MAUI</strong>
+                    </span>
+                  </td>
+                  <td><code>assemblies/</code> (Common Intermediate Language DLLs)</td>
+                  <td>Mono Runtime / .NET BCL</td>
+                  <td><code>packages.lock.json</code> (NuGet)</td>
+                  <td>
+                    <span class="status-badge-fail">
+                      <i class="fas fa-eye-slash"></i> Blind (CIL Assemblies)
+                    </span>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Explanatory Callout Box -->
+          <div class="matrix-callout">
+            <div style="display: flex; gap: 0.75rem; align-items: flex-start;">
+              <i class="fas fa-lightbulb" style="color: var(--primary-color); font-size: 1.25rem; margin-top: 0.15rem;"></i>
+              <div>
+                <strong>The Architectural Blind Spot:</strong>
+                In hybrid applications, the Dalvik layer (<code>classes.dex</code>) functions merely as a thin native wrapper or host activity. The core business logic and all actual third-party dependencies are compiled into custom binary formats, WebViews, or non-Java runtimes. 
+                <strong>X-TPL</strong> provides the first verified compile-time ground truth across all four major hybrid ecosystems, enabling the research community to evaluate and design next-generation, runtime-aware TPL detectors.
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
