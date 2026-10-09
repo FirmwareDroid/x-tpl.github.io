@@ -5,516 +5,787 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Primary Meta Tags -->
-  <!-- TODO: Replace with your paper title and author names -->
-  <meta name="title" content="PAPER_TITLE - AUTHOR_NAMES">
-  <!-- TODO: Write a compelling 150-160 character description of your research -->
-  <meta name="description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Add 5-10 relevant keywords for your research area -->
-  <meta name="keywords" content="KEYWORD1, KEYWORD2, KEYWORD3, machine learning, computer vision, AI">
-  <!-- TODO: List all authors -->
-  <meta name="author" content="FIRST_AUTHOR_NAME, SECOND_AUTHOR_NAME">
+  <title>X-TPL: A Ground-Truth Dataset of Cross-Platform Android Apps and their Third-Party Libraries</title>
+  <meta name="title" content="X-TPL: A Ground-Truth Dataset of Cross-Platform Android Apps and their Third-Party Libraries">
+  <meta name="description" content="A large-scale, verified ground-truth dataset and automated curation pipeline for black-box Third-Party Library (TPL) detection across Flutter, React Native, Apache Cordova, and .NET MAUI.">
+  <meta name="keywords" content="Android, Mobile Security, Third-Party Libraries, TPL Detection, Flutter, React Native, Apache Cordova, .NET MAUI, Ground-Truth Dataset, Benchmark, Software Engineering">
+  <meta name="author" content="Jordi Tim Frederik, Thomas Sutter, Timo Kehrer">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="article">
-  <!-- TODO: Replace with your institution or lab name -->
-  <meta property="og:site_name" content="INSTITUTION_OR_LAB_NAME">
-  <!-- TODO: Same as paper title above -->
-  <meta property="og:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta property="og:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Replace with your actual website URL -->
-  <meta property="og:url" content="https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE">
-  <!-- TODO: Create a 1200x630px preview image and update path -->
-  <meta property="og:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
+  <meta property="og:site_name" content="University of Bern - Software Engineering Group">
+  <meta property="og:title" content="X-TPL: A Ground-Truth Dataset of Cross-Platform Android Apps and their Third-Party Libraries">
+  <meta property="og:description" content="Verified ground-truth dataset of hybrid Android apps and their compiled third-party libraries across Flutter, React Native, Cordova, and MAUI.">
+  <meta property="og:url" content="https://x-tpl.github.io/">
+  <meta property="og:image" content="https://x-tpl.github.io/static/images/social_preview.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
-  <meta property="og:image:alt" content="PAPER_TITLE - Research Preview">
-  <meta property="article:published_time" content="2024-01-01T00:00:00.000Z">
-  <meta property="article:author" content="FIRST_AUTHOR_NAME">
-  <meta property="article:section" content="Research">
-  <meta property="article:tag" content="KEYWORD1">
-  <meta property="article:tag" content="KEYWORD2">
-
+  <meta property="og:image:alt" content="X-TPL Dataset Showcase">
+  
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
-  <!-- TODO: Replace with your lab/institution Twitter handle -->
-  <meta name="twitter:site" content="@YOUR_TWITTER_HANDLE">
-  <!-- TODO: Replace with first author's Twitter handle -->
-  <meta name="twitter:creator" content="@AUTHOR_TWITTER_HANDLE">
-  <!-- TODO: Same as paper title above -->
-  <meta name="twitter:title" content="PAPER_TITLE">
-  <!-- TODO: Same as description above -->
-  <meta name="twitter:description" content="BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS">
-  <!-- TODO: Same as social preview image above -->
-  <meta name="twitter:image" content="https://YOUR_DOMAIN.com/static/images/social_preview.png">
-  <meta name="twitter:image:alt" content="PAPER_TITLE - Research Preview">
+  <meta name="twitter:title" content="X-TPL: A Ground-Truth Dataset of Cross-Platform Android Apps and their Third-Party Libraries">
+  <meta name="twitter:description" content="A verified ground-truth dataset and automated curation pipeline for black-box TPL detection across hybrid Android frameworks.">
+  <meta name="twitter:image" content="https://x-tpl.github.io/static/images/social_preview.png">
 
   <!-- Academic/Research Specific -->
-  <meta name="citation_title" content="PAPER_TITLE">
-  <meta name="citation_author" content="FIRST_AUTHOR_LAST, FIRST_AUTHOR_FIRST">
-  <meta name="citation_author" content="SECOND_AUTHOR_LAST, SECOND_AUTHOR_FIRST">
-  <meta name="citation_publication_date" content="2024">
-  <meta name="citation_conference_title" content="CONFERENCE_NAME">
-  <meta name="citation_pdf_url" content="https://YOUR_DOMAIN.com/static/pdfs/paper.pdf">
+  <meta name="citation_title" content="X-TPL: A Ground-Truth Dataset of Cross-Platform Android Apps and their Third-Party Libraries">
+  <meta name="citation_author" content="Frederik, Jordi Tim">
+  <meta name="citation_author" content="Sutter, Thomas">
+  <meta name="citation_author" content="Kehrer, Timo">
   
-  <!-- Additional SEO -->
   <meta name="theme-color" content="#2563eb">
-  <meta name="msapplication-TileColor" content="#2563eb">
-  <meta name="apple-mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="default">
   
   <!-- Preconnect for performance -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="preconnect" href="https://ajax.googleapis.com">
-  <link rel="preconnect" href="https://documentcloud.adobe.com">
   <link rel="preconnect" href="https://cdn.jsdelivr.net">
 
-
-  <!-- TODO: Replace with your paper title and authors -->
-  <title>PAPER_TITLE - AUTHOR_NAMES | Academic Research</title>
-  
   <!-- Favicon and App Icons -->
   <link rel="icon" type="image/x-icon" href="static/images/favicon.ico">
-  <link rel="apple-touch-icon" href="static/images/favicon.ico">
   
-  <!-- Critical CSS - Load synchronously -->
+  <!-- Stylesheets -->
   <link rel="stylesheet" href="static/css/bulma.min.css">
   <link rel="stylesheet" href="static/css/index.css">
+  <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   
-  <!-- Non-critical CSS - Load asynchronously -->
-  <link rel="preload" href="static/css/bulma-carousel.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/bulma-slider.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="static/css/fontawesome.all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
-  <link rel="preload" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
   
-  <!-- Fallback for browsers that don't support preload -->
-  <noscript>
-    <link rel="stylesheet" href="static/css/bulma-carousel.min.css">
-    <link rel="stylesheet" href="static/css/bulma-slider.min.css">
-    <link rel="stylesheet" href="static/css/fontawesome.all.min.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  </noscript>
-  
-  <!-- Fonts - Optimized loading -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  
-  <!-- Defer non-critical JavaScript -->
+  <!-- Scripts -->
   <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="https://documentcloud.adobe.com/view-sdk/main.js"></script>
   <script defer src="static/js/fontawesome.all.min.js"></script>
-  <script defer src="static/js/bulma-carousel.min.js"></script>
-  <script defer src="static/js/bulma-slider.min.js"></script>
   <script defer src="static/js/index.js"></script>
   
-  <!-- Structured Data for Academic Papers -->
+  <!-- Structured Data for Academic Showcase -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
     "@type": "ScholarlyArticle",
-    "headline": "PAPER_TITLE",
-    "description": "BRIEF_DESCRIPTION_OF_YOUR_RESEARCH_CONTRIBUTION_AND_FINDINGS",
+    "headline": "X-TPL: A Ground-Truth Dataset of Cross-Platform Android Apps and their Third-Party Libraries",
+    "description": "A verified ground-truth dataset and automated curation pipeline for black-box TPL detection across hybrid Android frameworks.",
     "author": [
       {
         "@type": "Person",
-        "name": "FIRST_AUTHOR_NAME",
+        "name": "Jordi Tim Frederik",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "University of Bern"
         }
       },
       {
         "@type": "Person",
-        "name": "SECOND_AUTHOR_NAME",
+        "name": "Thomas Sutter",
         "affiliation": {
           "@type": "Organization",
-          "name": "INSTITUTION_NAME"
+          "name": "University of Bern"
+        }
+      },
+      {
+        "@type": "Person",
+        "name": "Timo Kehrer",
+        "affiliation": {
+          "@type": "Organization",
+          "name": "University of Bern"
         }
       }
     ],
-    "datePublished": "2024-01-01",
-    "publisher": {
-      "@type": "Organization",
-      "name": "CONFERENCE_OR_JOURNAL_NAME"
-    },
-    "url": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE",
-    "image": "https://YOUR_DOMAIN.com/static/images/social_preview.png",
-    "keywords": ["KEYWORD1", "KEYWORD2", "KEYWORD3", "machine learning", "computer vision"],
-    "abstract": "FULL_ABSTRACT_TEXT_HERE",
-    "citation": "BIBTEX_CITATION_HERE",
+    "url": "https://x-tpl.github.io/",
+    "keywords": ["Android", "Mobile Security", "Third-Party Libraries", "Cross-Platform", "Flutter", "React Native", "Cordova", "MAUI", "Benchmark"],
     "isAccessibleForFree": true,
-    "license": "https://creativecommons.org/licenses/by/4.0/",
-    "mainEntity": {
-      "@type": "WebPage",
-      "@id": "https://YOUR_DOMAIN.com/YOUR_PROJECT_PAGE"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "RESEARCH_AREA_1"
-      },
-      {
-        "@type": "Thing", 
-        "name": "RESEARCH_AREA_2"
-      }
-    ]
-  }
-  </script>
-  
-  <!-- Website/Organization Structured Data -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "INSTITUTION_OR_LAB_NAME",
-    "url": "https://YOUR_INSTITUTION_WEBSITE.com",
-    "logo": "https://YOUR_DOMAIN.com/static/images/favicon.ico",
-    "sameAs": [
-      "https://twitter.com/YOUR_TWITTER_HANDLE",
-      "https://github.com/YOUR_GITHUB_USERNAME"
-    ]
+    "license": "https://creativecommons.org/licenses/by/4.0/"
   }
   </script>
 </head>
 <body>
-
 
   <!-- Scroll to Top Button -->
   <button class="scroll-to-top" onclick="scrollToTop()" title="Scroll to top" aria-label="Scroll to top">
     <i class="fas fa-chevron-up"></i>
   </button>
 
-  <!-- More Works Dropdown -->
-  <div class="more-works-container">
-    <button class="more-works-btn" onclick="toggleMoreWorks()" title="View More Works from Our Lab">
-      <i class="fas fa-flask"></i>
-      More Works
-      <i class="fas fa-chevron-down dropdown-arrow"></i>
-    </button>
-    <div class="more-works-dropdown" id="moreWorksDropdown">
-      <div class="dropdown-header">
-        <h4>More Works from Our Lab</h4>
-        <button class="close-btn" onclick="toggleMoreWorks()">
-          <i class="fas fa-times"></i>
-        </button>
-      </div>
-      <div class="works-list">
-        <!-- TODO: Replace with your lab's related works -->
-        <a href="https://arxiv.org/abs/PAPER_ID_1" class="work-item" target="_blank">
-          <div class="work-info">
-            <!-- TODO: Replace with actual paper title -->
-            <h5>Paper Title 1</h5>
-            <!-- TODO: Replace with brief description -->
-            <p>Brief description of the work and its main contribution.</p>
-            <!-- TODO: Replace with venue and year -->
-            <span class="work-venue">Conference/Journal 2024</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <!-- TODO: Add more related works or remove extra items -->
-        <a href="https://arxiv.org/abs/PAPER_ID_2" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 2</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-        <a href="https://arxiv.org/abs/PAPER_ID_3" class="work-item" target="_blank">
-          <div class="work-info">
-            <h5>Paper Title 3</h5>
-            <p>Brief description of the work and its main contribution.</p>
-            <span class="work-venue">Conference/Journal 2023</span>
-          </div>
-          <i class="fas fa-external-link-alt"></i>
-        </a>
-      </div>
-    </div>
-  </div>
-
   <main id="main-content">
-  <section class="hero">
-    <div class="hero-body">
-      <div class="container is-max-desktop">
-        <div class="columns is-centered">
-          <div class="column has-text-centered">
-            <!-- TODO: Replace with your paper title -->
-            <h1 class="title is-1 publication-title">Academic Project Page</h1>
-            <div class="is-size-5 publication-authors">
-              <!-- TODO: Replace with your paper authors and their personal links -->
-              <span class="author-block">
-                <a href="FIRST AUTHOR PERSONAL LINK" target="_blank">First Author</a><sup>*</sup>,</span>
+    
+    <!-- Hero / Header Section -->
+    <section class="hero">
+      <div class="hero-body">
+        <div class="container is-max-desktop">
+          <div class="columns is-centered">
+            <div class="column has-text-centered">
+              
+              <!-- Track Badge (without mentioning conference year directly) -->
+              <div>
+                <span class="conference-badge">
+                  <i class="fas fa-database"></i>
+                  Tool Demonstration and Data Showcase Track
+                </span>
+              </div>
+              
+              <!-- Paper Title -->
+              <h1 class="title is-1 publication-title">
+                <span style="color: var(--primary-color);">X-TPL</span>: A Ground-Truth Dataset of Cross-Platform Android Apps and their Third-Party Libraries
+              </h1>
+              
+              <!-- Authors List with persistent ORCID links -->
+              <div class="is-size-5 publication-authors">
                 <span class="author-block">
-                  <a href="SECOND AUTHOR PERSONAL LINK" target="_blank">Second Author</a><sup>*</sup>,</span>
-                  <span class="author-block">
-                    <a href="THIRD AUTHOR PERSONAL LINK" target="_blank">Third Author</a>
-                  </span>
-                  </div>
+                  <a href="https://orcid.org/0009-0007-6167-4788" target="_blank" rel="noopener noreferrer">
+                    Jordi Tim Frederik
+                    <i class="ai ai-orcid orcid-icon"></i>
+                  </a>
+                </span> &nbsp;&bull;&nbsp;
+                <span class="author-block">
+                  <a href="https://orcid.org/0000-0003-2649-3299" target="_blank" rel="noopener noreferrer">
+                    Thomas Sutter
+                    <i class="ai ai-orcid orcid-icon"></i>
+                  </a>
+                </span> &nbsp;&bull;&nbsp;
+                <span class="author-block">
+                  <a href="https://orcid.org/0000-0002-2582-5557" target="_blank" rel="noopener noreferrer">
+                    Timo Kehrer
+                    <i class="ai ai-orcid orcid-icon"></i>
+                  </a>
+                </span>
+              </div>
 
-                  <div class="is-size-5 publication-authors">
-                    <!-- TODO: Replace with your institution and conference/journal info -->
-                    <span class="author-block">Institution Name<br>Conference name and year</span>
-                    <!-- TODO: Remove this line if no equal contribution -->
-                    <span class="eql-cntrb"><small><br><sup>*</sup>Indicates Equal Contribution</small></span>
-                  </div>
+              <!-- Institution Affiliation -->
+              <div class="author-affiliation">
+                <span>Software Engineering Group &bull; University of Bern, Switzerland</span>
+              </div>
 
-                  <div class="column has-text-centered">
-                    <div class="publication-links">
-                         <!-- TODO: Update with your arXiv paper ID -->
-                      <span class="link-block">
-                        <a href="https://arxiv.org/pdf/<ARXIV PAPER ID>.pdf" target="_blank"
-                        class="external-link button is-normal is-rounded is-dark">
-                        <span class="icon">
-                          <i class="fas fa-file-pdf"></i>
-                        </span>
-                        <span>Paper</span>
-                      </a>
-                    </span>
-
-                    <!-- TODO: Add your supplementary material PDF or remove this section -->
-                    <span class="link-block">
-                      <a href="static/pdfs/supplementary_material.pdf" target="_blank"
-                      class="external-link button is-normal is-rounded is-dark">
+              <!-- Quick Action Links -->
+              <div class="column has-text-centered" style="margin-top: 1.5rem;">
+                <div class="publication-links">
+                  
+                  <!-- Dataset Download Link -->
+                  <span class="link-block">
+                    <a href="#dataset-access"
+                       class="external-link button is-normal is-rounded is-dark">
                       <span class="icon">
-                        <i class="fas fa-file-pdf"></i>
+                        <i class="fas fa-download"></i>
                       </span>
-                      <span>Supplementary</span>
+                      <span>Download Dataset</span>
                     </a>
                   </span>
 
-                  <!-- TODO: Replace with your GitHub repository URL -->
+                  <!-- Code / Pipeline Link -->
                   <span class="link-block">
-                    <a href="https://github.com/YOUR REPO HERE" target="_blank"
-                    class="external-link button is-normal is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span>Code</span>
-                  </a>
-                </span>
-
-                <!-- TODO: Update with your arXiv paper ID -->
-                <span class="link-block">
-                  <a href="https://arxiv.org/abs/<ARXIV PAPER ID>" target="_blank"
-                  class="external-link button is-normal is-rounded is-dark">
-                  <span class="icon">
-                    <i class="ai ai-arxiv"></i>
+                    <a href="https://github.com/x-tpl" target="_blank"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-github"></i>
+                      </span>
+                      <span>Source-Code</span>
+                    </a>
                   </span>
-                  <span>arXiv</span>
-                </a>
-              </span>
+
+                  <!-- Video Presentation Jump Link -->
+                  <span class="link-block">
+                    <a href="#video-showcase"
+                       class="external-link button is-normal is-rounded is-dark">
+                      <span class="icon">
+                        <i class="fab fa-youtube" style="color: #ef4444;"></i>
+                      </span>
+                      <span>Showcase Video</span>
+                    </a>
+                  </span>
+
+                  <!-- Paper PDF Link (Hidden for submission - will be un-commented upon publication)
+                  <span class="link-block" style="display: none;">
+                    <a href="#" class="external-link button is-normal is-rounded is-dark" title="Paper PDF (Available upon publication)">
+                      <span class="icon">
+                        <i class="fas fa-file-pdf"></i>
+                      </span>
+                      <span>Paper (Draft)</span>
+                    </a>
+                  </span>
+                  -->
+
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
       </div>
-    </div>
-  </div>
-</section>
+    </section>
 
+    <!-- Key Metrics Highlight Section -->
+    <section class="section" style="padding-top: 0; padding-bottom: 2rem;">
+      <div class="container is-max-desktop">
+        <div class="stats-grid">
+          
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-layer-group"></i></div>
+            <div class="stat-value">Four Hybrid Frameworks</div>
+            <div class="stat-label">Multi-Ecosystem</div>
+            <div class="stat-desc">Flutter, React Native, Apache Cordova, and .NET MAUI applications.</div>
+          </div>
 
-<!-- Teaser video-->
-<section class="hero teaser">
-  <div class="container is-max-desktop">
-    <div class="hero-body">
-      <!-- TODO: Replace with your teaser video -->
-      <video poster="" id="tree" autoplay controls muted loop height="100%" preload="metadata">
-        <!-- TODO: Add your video file path here -->
-        <source src="static/videos/banner_video.mp4" type="video/mp4">
-      </video>
-      <!-- TODO: Replace with your video description -->
-      <h2 class="subtitle has-text-centered">
-        Aliquam vitae elit ullamcorper tellus egestas pellentesque. Ut lacus tellus, maximus vel lectus at, placerat pretium mi. Maecenas dignissim tincidunt vestibulum. Sed consequat hendrerit nisl ut maximus. 
-      </h2>
-    </div>
-  </div>
-</section>
-<!-- End teaser video -->
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-check-double"></i></div>
+            <div class="stat-value">Verified</div>
+            <div class="stat-label">Compile-Time Ground Truth</div>
+            <div class="stat-desc">Exact package manager lock files guarantee accurate dependencies.</div>
+          </div>
 
-<!-- Paper abstract -->
-<section class="section hero is-light">
-  <div class="container is-max-desktop">
-    <div class="columns is-centered has-text-centered">
-      <div class="column is-four-fifths">
-        <h2 class="title is-3">Abstract</h2>
-        <div class="content has-text-justified">
-          <!-- TODO: Replace with your paper abstract -->
-          <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin ullamcorper tellus sed ante aliquam tempus. Etiam porttitor urna feugiat nibh elementum, et tempor dolor mattis. Donec accumsan enim augue, a vulputate nisi sodales sit amet. Proin bibendum ex eget mauris cursus euismod nec et nibh. Maecenas ac gravida ante, nec cursus dui. Vivamus purus nibh, placerat ac purus eget, sagittis vestibulum metus. Sed vestibulum bibendum lectus gravida commodo. Pellentesque auctor leo vitae sagittis suscipit.
-          </p>
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-sliders-h"></i></div>
+            <div class="stat-value">Paired Builds</div>
+            <div class="stat-label">Debug &amp; Obfuscated</div>
+            <div class="stat-desc">Debug vs. Release builds (with R8 code shrinking and obfuscation).</div>
+          </div>
+
+          <div class="stat-card">
+            <div class="stat-icon"><i class="fas fa-microchip"></i></div>
+            <div class="stat-value">Multi-Arch</div>
+            <div class="stat-label">Binary Diversity</div>
+            <div class="stat-desc">Targeted ARM and x86 APK builds mimicking production store distributions.</div>
+          </div>
+
         </div>
       </div>
-    </div>
-  </div>
-</section>
-<!-- End paper abstract -->
+    </section>
 
-
-<!-- Image carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <div id="results-carousel" class="carousel results-carousel">
-       <div class="item">
-        <!-- TODO: Replace with your research result images -->
-        <img src="static/images/carousel1.jpg" alt="First research result visualization" loading="lazy"/>
-        <!-- TODO: Replace with description of this result -->
-        <h2 class="subtitle has-text-centered">
-          First image description.
-        </h2>
+    <!-- Abstract / Motivation Section -->
+    <section class="section hero is-light">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Abstract</h2>
+            <div class="content has-text-justified">
+              <p>
+                Cross-Platform mobile application frameworks—such as <strong>Flutter, React Native, Apache Cordova, and .NET MAUI</strong>—have surged in popularity, allowing developers to target multiple operating systems from a single codebase. However, this flexibility introduces profound challenges for software maintenance, security auditing, and license compliance. 
+              </p>
+              <p>
+                State-of-the-art native Android Third-Party Library (TPL) detection tools (e.g., LibScout, LibRadar, LibScan) rely on standard Dalvik/ART bytecode (<code>classes.dex</code>) and fail when confronted with hybrid apps, where dependencies reside inside JavaScript bundles (<code>index.android.bundle</code>), compiled Dart machine code (<code>libapp.so</code>), WebViews, or .NET assemblies. Research has been bottlenecked by the lack of high-quality, framework-diverse benchmarks.
+              </p>
+              <p>
+                <strong>X-TPL</strong> (Cross-TPL) provides the first verified, large-scale ground-truth benchmark mapping production hybrid Android APKs directly to their compiled third-party dependencies, supported by a fully automated and containerized curation pipeline.
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel2.jpg" alt="Second research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-          Second image description.
-        </h2>
+    </section>
+
+    <!-- Video Presentation Section (YouTube Reference Placeholder) -->
+    <section class="section" id="video-showcase">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered has-text-centered">
+          <div class="column is-four-fifths">
+            <h2 class="title is-3">Video Showcase</h2>
+            <p class="subtitle" style="font-size: 1.05rem; color: var(--text-secondary); margin-bottom: 2rem;">
+              Demonstration video accompanying our Tool Demonstration and Data Showcase submission.
+            </p>
+
+            <!-- Video Box Container -->
+            <div class="video-showcase-box">
+              <div class="video-placeholder-inner">
+                <div class="video-placeholder-content">
+                  
+                  <span class="video-duration-pill">
+                    <i class="fas fa-clock"></i> 3&ndash;5 Minute Walkthrough &bull; Data Showcase
+                  </span>
+
+                  <!-- YouTube Play Button linking to the placeholder -->
+                  <a href="https://youtu.be/PLACEHOLDER" target="_blank" class="video-play-button" title="Watch on YouTube">
+                    <i class="fas fa-play" style="margin-left: 5px;"></i>
+                  </a>
+
+                  <h3 class="video-title-placeholder">
+                    X-TPL: Dataset Walkthrough &amp; Curation Pipeline Demo
+                  </h3>
+
+                  <p class="video-desc-placeholder">
+                    Video presentation walking through the X-TPL benchmark structure, Docker-based curation pipeline, lock-file ground-truth extraction, and black-box TPL detection evaluations.
+                  </p>
+
+                  <!-- Direct YouTube Link Button -->
+                  <div style="margin-top: 0.5rem; margin-bottom: 1.25rem;">
+                    <a href="https://youtu.be/PLACEHOLDER" target="_blank" class="button is-danger is-small is-rounded" style="font-weight: 700;">
+                      <span class="icon"><i class="fab fa-youtube"></i></span>
+                      <span>Watch Video on YouTube (Placeholder: youtu.be/PLACEHOLDER)</span>
+                    </a>
+                  </div>
+
+                  <!-- Covered Topics Tags -->
+                  <div class="video-topics-list">
+                    <span class="video-topic-tag"><i class="fas fa-crosshairs"></i> Hybrid TPL Blind Spots</span>
+                    <span class="video-topic-tag"><i class="fas fa-docker"></i> Automated Docker Builds</span>
+                    <span class="video-topic-tag"><i class="fas fa-file-contract"></i> Lockfile Ground Truth</span>
+                    <span class="video-topic-tag"><i class="fas fa-shield-alt"></i> Black-Box Detection Benchmarks</span>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
       </div>
-      <div class="item">
-        <!-- Your image here -->
-        <img src="static/images/carousel3.jpg" alt="Third research result visualization" loading="lazy"/>
-        <h2 class="subtitle has-text-centered">
-         Third image description.
-       </h2>
-     </div>
-     <div class="item">
-      <!-- Your image here -->
-      <img src="static/images/carousel4.jpg" alt="Fourth research result visualization" loading="lazy"/>
-      <h2 class="subtitle has-text-centered">
-        Fourth image description.
-      </h2>
-    </div>
-  </div>
-</div>
-</div>
-</section>
-<!-- End image carousel -->
+    </section>
 
+    <!-- Dataset Overview & Variations Section (Diagram Placeholders) -->
+    <section class="section hero is-light" id="dataset-variations">
+      <div class="container is-max-desktop">
+        
+        <div class="has-text-centered" style="margin-bottom: 2.5rem;">
+          <h2 class="title is-3">Dataset Composition &amp; Variations</h2>
+          <p class="subtitle" style="font-size: 1.05rem; color: var(--text-secondary);">
+            Breakdown of compiled applications, unique third-party libraries, and build configurations across hybrid frameworks.
+          </p>
+        </div>
 
+        <!-- Table I: Overview from the paper -->
+        <div class="columns is-centered" style="margin-bottom: 2rem;">
+          <div class="column is-10">
+            <div style="overflow-x: auto;">
+              <table class="table is-custom is-hoverable is-fullwidth">
+                <thead>
+                  <tr>
+                    <th>Framework</th>
+                    <th class="has-text-centered">Compiled Apps</th>
+                    <th class="has-text-centered">Unique TPLs</th>
+                    <th>Build Configurations</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <span class="framework-badge">
+                        <i class="fab fa-flutter" style="color: #02569B;"></i> Flutter
+                      </span>
+                    </td>
+                    <td class="has-text-centered"><code>XXXX</code></td>
+                    <td class="has-text-centered"><code>XXXX</code></td>
+                    <td>Debug, Rel. (R8 Code Shrinking), Rel. (Native Obfuscation)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="framework-badge">
+                        <i class="fab fa-react" style="color: #61DAFB;"></i> React Native
+                      </span>
+                    </td>
+                    <td class="has-text-centered"><code>XXXX</code></td>
+                    <td class="has-text-centered"><code>XXXX</code></td>
+                    <td>Debug, Rel. (R8 Code Shrinking)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="framework-badge">
+                        <i class="fas fa-mobile-alt" style="color: #E68523;"></i> Apache Cordova
+                      </span>
+                    </td>
+                    <td class="has-text-centered"><code>XXXX</code></td>
+                    <td class="has-text-centered"><code>XXXX</code></td>
+                    <td>Debug, Rel. (R8 Code Shrinking)</td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <span class="framework-badge">
+                        <i class="fas fa-cubes" style="color: #512BD4;"></i> .NET MAUI
+                      </span>
+                    </td>
+                    <td class="has-text-centered"><code>XXXX</code></td>
+                    <td class="has-text-centered"><code>XXXX</code></td>
+                    <td>Debug, Rel. (R8 Code Shrinking)</td>
+                  </tr>
+                </tbody>
+                <tfoot>
+                  <tr style="background: #f1f5f9; font-weight: 700;">
+                    <td>Total Dataset</td>
+                    <td class="has-text-centered"><code>XXXX</code></td>
+                    <td class="has-text-centered"><code>XXXX</code></td>
+                    <td>Multi-Arch (ARM &amp; x86) Across All Frameworks</td>
+                  </tr>
+                </tfoot>
+              </table>
+            </div>
+            <p class="has-text-centered" style="font-size: 0.85rem; color: var(--text-light); margin-top: 0.5rem;">
+              <em>Table 1: Overview of the X-TPL dataset composition by cross-platform framework.</em>
+            </p>
+          </div>
+        </div>
 
+        <!-- DIAGRAM PLACEHOLDER 1: Number of Apps and TPL Distribution -->
+        <div class="diagram-placeholder-card">
+          <div class="diagram-placeholder-header">
+            <span class="diagram-tag"><i class="fas fa-chart-pie"></i> Diagram Placeholder 1</span>
+            <span class="diagram-badge-pending">
+              <i class="fas fa-hourglass-half"></i> Placeholder: App &amp; TPL Distribution
+            </span>
+          </div>
 
-<!-- Youtube video -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <!-- Paper video. -->
-      <h2 class="title is-3">Video Presentation</h2>
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
+          <!-- Mock Visual Wireframe -->
+          <div class="diagram-mock-preview">
+            <div class="diagram-mock-icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <!-- Visual representation / bars -->
+            <div style="display: flex; gap: 1.5rem; align-items: flex-end; height: 90px; margin-bottom: 1rem;">
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 0.25rem;">
+                <div style="width: 45px; height: 75px; background: #02569B; border-radius: 4px; opacity: 0.85;"></div>
+                <span style="font-size: 0.75rem; font-weight: 600; color: #475569;">Flutter</span>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 0.25rem;">
+                <div style="width: 45px; height: 60px; background: #61DAFB; border-radius: 4px; opacity: 0.85;"></div>
+                <span style="font-size: 0.75rem; font-weight: 600; color: #475569;">React Native</span>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 0.25rem;">
+                <div style="width: 45px; height: 45px; background: #E68523; border-radius: 4px; opacity: 0.85;"></div>
+                <span style="font-size: 0.75rem; font-weight: 600; color: #475569;">Cordova</span>
+              </div>
+              <div style="display: flex; flex-direction: column; align-items: center; gap: 0.25rem;">
+                <div style="width: 45px; height: 50px; background: #512BD4; border-radius: 4px; opacity: 0.85;"></div>
+                <span style="font-size: 0.75rem; font-weight: 600; color: #475569;">.NET MAUI</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML comment for user/developer replacement -->
+          <!-- TODO: Replace the preview above with: <img src="static/images/diagram_apps_distribution.svg" alt="Number of Apps and TPL Distribution"> -->
           
-          <div class="publication-video">
-            <!-- TODO: Replace with your YouTube video ID -->
-            <iframe src="https://www.youtube.com/embed/JkaxUblCGz0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+          <div class="diagram-caption">
+            Figure: Number of Compiled Apps and Unique TPLs across Cross-Platform Frameworks
+          </div>
+          <div class="diagram-subcaption">
+            Visual plot illustrating the relative proportion of compiled applications, unique third-party libraries, and multi-tier dependencies (native Android vs. framework packages) across Flutter, React Native, Cordova, and MAUI.
+          </div>
+        </div>
+
+        <!-- DIAGRAM PLACEHOLDER 2: Build Variations & Target Architectures -->
+        <div class="diagram-placeholder-card">
+          <div class="diagram-placeholder-header">
+            <span class="diagram-tag"><i class="fas fa-layer-group"></i> Diagram Placeholder 2</span>
+            <span class="diagram-badge-pending">
+              <i class="fas fa-hourglass-half"></i> Placeholder: Variations &amp; Architectures
+            </span>
+          </div>
+
+          <!-- Mock Visual Wireframe -->
+          <div class="diagram-mock-preview">
+            <div class="diagram-mock-icon">
+              <i class="fas fa-project-diagram"></i>
+            </div>
+            <!-- Stacked bar / config variation layout -->
+            <div style="display: flex; flex-direction: column; gap: 0.6rem; width: 100%; max-width: 480px;">
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <span style="font-size: 0.8rem; font-weight: 600; width: 110px; text-align: right; color: #475569;">Debug Builds:</span>
+                <div style="flex-grow: 1; height: 18px; background: #93c5fd; border-radius: 4px; position: relative;">
+                  <span style="position: absolute; right: 8px; font-size: 0.7rem; font-weight: 700; color: #1e3a8a;">Baseline Footprint</span>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <span style="font-size: 0.8rem; font-weight: 600; width: 110px; text-align: right; color: #475569;">Release (R8):</span>
+                <div style="flex-grow: 1; height: 18px; background: #86efac; border-radius: 4px; position: relative;">
+                  <span style="position: absolute; right: 8px; font-size: 0.7rem; font-weight: 700; color: #14532d;">Tree-Shaken / Minified</span>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <span style="font-size: 0.8rem; font-weight: 600; width: 110px; text-align: right; color: #475569;">Release (Obf.):</span>
+                <div style="flex-grow: 1; height: 18px; background: #fdba74; border-radius: 4px; position: relative;">
+                  <span style="position: absolute; right: 8px; font-size: 0.7rem; font-weight: 700; color: #7c2d12;">Native Obfuscated</span>
+                </div>
+              </div>
+              <div style="display: flex; align-items: center; gap: 0.75rem;">
+                <span style="font-size: 0.8rem; font-weight: 600; width: 110px; text-align: right; color: #475569;">Architectures:</span>
+                <div style="flex-grow: 1; display: flex; gap: 4px;">
+                  <div style="flex: 1; height: 18px; background: #c4b5fd; border-radius: 4px; text-align: center; font-size: 0.7rem; font-weight: 700; color: #4c1d95;">ARM64 / ARMv7</div>
+                  <div style="flex: 1; height: 18px; background: #fbcfe8; border-radius: 4px; text-align: center; font-size: 0.7rem; font-weight: 700; color: #831843;">x86 / x86_64</div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML comment for user/developer replacement -->
+          <!-- TODO: Replace the preview above with: <img src="static/images/diagram_build_variations.svg" alt="Build Variations and Architecture Breakdown"> -->
+
+          <div class="diagram-caption">
+            Figure: Breakdown of App Build Variations, Dead-Code Elimination &amp; Target Architectures
+          </div>
+          <div class="diagram-subcaption">
+            Comparative chart of compilation configurations (Debug vs. R8 code-shrunk Release vs. native obfuscation) and binary architectures, enabling researchers to evaluate tree-shaking robustness and dead-code resilience.
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Methodology & Automated Curation Pipeline Section -->
+    <section class="section" id="curation-pipeline">
+      <div class="container is-max-desktop">
+        
+        <div class="has-text-centered" style="margin-bottom: 2.5rem;">
+          <h2 class="title is-3">Automated Curation Pipeline</h2>
+          <p class="subtitle" style="font-size: 1.05rem; color: var(--text-secondary);">
+            Reproducible, Docker-isolated compilation system extracting verified compile-time dependency ground truths.
+          </p>
+        </div>
+
+        <!-- 4-Phase Process Description -->
+        <div class="columns is-multiline">
+          
+          <div class="column is-6">
+            <div style="padding: 1.25rem; background: var(--background-secondary); border-radius: var(--border-radius); border: 1px solid var(--border-color); height: 100%;">
+              <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">
+                <span style="color: var(--primary-color);">1.</span> Crawling &amp; Filtering
+              </h4>
+              <p style="font-size: 0.95rem; color: var(--text-secondary);">
+                Uses the GitHub API via PyGithub to identify candidate repositories across Flutter, React Native, Cordova, and MAUI. Pre-filters repositories targeting latest releases or trunk commits based on build manifests.
+              </p>
+            </div>
+          </div>
+
+          <div class="column is-6">
+            <div style="padding: 1.25rem; background: var(--background-secondary); border-radius: var(--border-radius); border: 1px solid var(--border-color); height: 100%;">
+              <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">
+                <span style="color: var(--primary-color);">2.</span> Repository Analysis
+              </h4>
+              <p style="font-size: 0.95rem; color: var(--text-secondary);">
+                Locates the topmost valid Android build directory and conservatively estimates baseline toolchain versions for Gradle, JDK, and framework runtimes. Excludes repositories with broken private dependencies.
+              </p>
+            </div>
+          </div>
+
+          <div class="column is-6">
+            <div style="padding: 1.25rem; background: var(--background-secondary); border-radius: var(--border-radius); border: 1px solid var(--border-color); height: 100%;">
+              <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">
+                <span style="color: var(--primary-color);">3.</span> Containerized Compilation
+              </h4>
+              <p style="font-size: 0.95rem; color: var(--text-secondary);">
+                Executes builds inside dynamically generated Docker containers. Automatically bumps toolchain versions on failure and builds paired configurations: Debug, Release (with R8), and native obfuscation.
+              </p>
+            </div>
+          </div>
+
+          <div class="column is-6">
+            <div style="padding: 1.25rem; background: var(--background-secondary); border-radius: var(--border-radius); border: 1px solid var(--border-color); height: 100%;">
+              <h4 style="font-size: 1.1rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.5rem;">
+                <span style="color: var(--primary-color);">4.</span> Ground-Truth Extraction
+              </h4>
+              <p style="font-size: 0.95rem; color: var(--text-secondary);">
+                Extracts the final resolved lock files (<code>package-lock.json</code>, <code>yarn.lock</code>, <code>package_config.json</code>, <code>packages.lock.json</code>) alongside the architecture-specific APK binaries.
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- DIAGRAM PLACEHOLDER 3: Pipeline Overview -->
+        <div class="diagram-placeholder-card" style="margin-top: 2rem;">
+          <div class="diagram-placeholder-header">
+            <span class="diagram-tag"><i class="fas fa-sitemap"></i> Diagram Placeholder 3</span>
+            <span class="diagram-badge-pending">
+              <i class="fas fa-hourglass-half"></i> Placeholder: Curation Pipeline Architecture
+            </span>
+          </div>
+
+          <!-- Mock Visual Pipeline Flow -->
+          <div class="diagram-mock-preview">
+            <div class="pipeline-flow">
+              <div class="pipeline-step">
+                <i class="fab fa-github"></i>
+                <span>1. GitHub Crawl</span>
+              </div>
+              <div class="pipeline-arrow"><i class="fas fa-arrow-right"></i></div>
+              <div class="pipeline-step">
+                <i class="fas fa-search-plus"></i>
+                <span>2. Static Analysis</span>
+              </div>
+              <div class="pipeline-arrow"><i class="fas fa-arrow-right"></i></div>
+              <div class="pipeline-step">
+                <i class="fab fa-docker"></i>
+                <span>3. Docker Builds</span>
+              </div>
+              <div class="pipeline-arrow"><i class="fas fa-arrow-right"></i></div>
+              <div class="pipeline-step">
+                <i class="fas fa-file-archive"></i>
+                <span>4. APK &amp; Lockfiles</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- HTML comment for user/developer replacement -->
+          <!-- TODO: Replace the preview above with: <img src="static/images/diagram_pipeline_overview.svg" alt="Overview of the system to build the dataset"> -->
+
+          <div class="diagram-caption">
+            Figure 1: Overview of the Automated System for Building the X-TPL Dataset
+          </div>
+          <div class="diagram-subcaption">
+            End-to-end architecture showing repository crawling, version estimation, isolated multi-stage containerized compilation, and dual-artifact extraction (compiled APKs &amp; resolved lockfiles).
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Dataset Structure & Availability Section -->
+    <section class="section hero is-light" id="dataset-access">
+      <div class="container is-max-desktop">
+        <div class="has-text-centered" style="margin-bottom: 2rem;">
+          <h2 class="title is-3">Dataset Structure &amp; Availability</h2>
+          <p class="subtitle" style="font-size: 1.05rem; color: var(--text-secondary);">
+            Openly accessible data repository with multiple retrieval protocols and structured framework directories.
+          </p>
+        </div>
+
+        <!-- Available Protocols Grid: RSYNC, FTP, HTTP -->
+        <div class="protocols-grid">
+          
+          <!-- HTTP Card -->
+          <div class="protocol-card">
+            <div class="protocol-header">
+              <div class="protocol-icon-badge" style="background: #2563eb;">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div>
+                <div class="protocol-title">HTTP Download</div>
+                <span class="tag is-info is-light is-rounded" style="font-size: 0.75rem; font-weight: 600;">Browser &amp; Direct Links</span>
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+              Direct browser exploration and single-file or zip downloads hosted on CloudLab Vault storage.
+            </p>
+            <div class="protocol-snippet">
+              <a href="https://vault.cloudlab.zhaw.ch/vault-data/x-tpl" target="_blank" style="color: #2563eb; font-weight: 600;">
+                https://vault.cloudlab.zhaw.ch/vault-data/x-tpl
+              </a>
+            </div>
+          </div>
+
+          <!-- RSYNC Card -->
+          <div class="protocol-card">
+            <div class="protocol-header">
+              <div class="protocol-icon-badge" style="background: #0d9488;">
+                <i class="fas fa-sync-alt"></i>
+              </div>
+              <div>
+                <div class="protocol-title">RSYNC Protocol</div>
+                <span class="tag is-primary is-light is-rounded" style="font-size: 0.75rem; font-weight: 600;">Fast &amp; Resumable</span>
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+              Recommended for downloading large APK batches with differential syncing and automatic resume.
+            </p>
+            <div class="protocol-snippet">
+              <code>rsync -avz --progress rsync://vault.cloudlab.zhaw.ch/x-tpl ./x-tpl/</code>
+            </div>
+          </div>
+
+          <!-- FTP Card -->
+          <div class="protocol-card">
+            <div class="protocol-header">
+              <div class="protocol-icon-badge" style="background: #7c3aed;">
+                <i class="fas fa-folder-open"></i>
+              </div>
+              <div>
+                <div class="protocol-title">FTP Access</div>
+                <span class="tag is-purple is-light is-rounded" style="font-size: 0.75rem; font-weight: 600; background: #ede9fe; color: #6d28d9;">Bulk FTP Client</span>
+              </div>
+            </div>
+            <p style="font-size: 0.85rem; color: var(--text-secondary); margin-bottom: 0.75rem;">
+              Standard FTP endpoint accessible via command-line tools (curl, wget) or GUI clients (FileZilla, Cyberduck).
+            </p>
+            <div class="protocol-snippet">
+              <code>ftp://vault.cloudlab.zhaw.ch/x-tpl/</code>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="columns is-centered">
+          <div class="column is-11">
+            
+            <!-- File Tree Layout Preview matching exact user requested folders -->
+            <div style="margin-top: 1rem; margin-bottom: 1.5rem;">
+              <h4 style="font-size: 1.05rem; font-weight: 700; color: var(--text-primary); margin-bottom: 0.75rem;">
+                <i class="fas fa-sitemap" style="color: var(--primary-color);"></i> Directory Layout:
+              </h4>
+              <div class="dataset-tree-card">
+                <div><span class="tree-folder">x-tpl/</span> <span class="tree-comment"># Root dataset directory</span></div>
+                <div>├── <span class="tree-file">README.txt</span> <span class="tree-comment"># Dataset documentation</span></div>
+                <div>├── <span class="tree-file">metadata.json</span> <span class="tree-comment"># Root-level metadata: commit hashes, toolchain versions, build outcomes</span></div>
+                <div>├── <span class="tree-folder">ReactNative/</span> <span class="tree-comment"># React Native APKs &amp; lock files (package-lock.json, yarn.lock)</span></div>
+                <div>│&nbsp;&nbsp; └── <span class="tree-folder">&lt;project_name&gt;/</span> <span class="tree-comment"># App project folder</span></div>
+                <div>│&nbsp;&nbsp;     ├── <span class="tree-file">app-debug.apk</span> <span class="tree-comment"># Compiled APK binary</span></div>
+                <div>│&nbsp;&nbsp;     ├── <span class="tree-file">app-release.apk</span> <span class="tree-comment"># Release APK binary</span></div>
+                <div>├── <span class="tree-folder">Flutter/</span> <span class="tree-comment"># Flutter APKs &amp; lock files (package_config.json, pubspec.lock)</span></div>
+                <div>│&nbsp;&nbsp; └── <span class="tree-folder">&lt;project_name&gt;/</span> <span class="tree-comment"># App project folder</span></div>
+                <div>│&nbsp;&nbsp;     ├── <span class="tree-file">app-debug.apk</span></div>
+                <div>│&nbsp;&nbsp;     ├── <span class="tree-file">app-release.apk</span></div>
+                <div>├── <span class="tree-folder">Cordova/</span> <span class="tree-comment"># Apache Cordova APKs &amp; plugin lock files (plugins.json)</span></div>
+                <div>│&nbsp;&nbsp; └── <span class="tree-folder">&lt;project_name&gt;/</span> <span class="tree-comment"># App project folder</span></div>
+                <div>│&nbsp;&nbsp;     ├── <span class="tree-file">app-debug.apk</span></div>
+                <div>│&nbsp;&nbsp;     ├── <span class="tree-file">app-release.apk</span></div>
+                <div>└── <span class="tree-folder">Maui/</span> <span class="tree-comment"># .NET MAUI APKs &amp; NuGet lock files (packages.lock.json)</span></div>
+                <div>&nbsp;&nbsp;&nbsp; └── <span class="tree-folder">&lt;project_name&gt;/</span> <span class="tree-comment"># App project folder</span></div>
+                <div>&nbsp;&nbsp;&nbsp;     ├── <span class="tree-file">app-debug.apk</span></div>
+                <div>&nbsp;&nbsp;&nbsp;     ├── <span class="tree-file">app-release.apk</span></div>
+              </div>
+            </div>
+
+            <!-- Download Action Buttons -->
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 1.5rem;">
+              <a href="https://vault.cloudlab.zhaw.ch/vault-data/x-tpl" target="_blank" class="button is-primary is-medium">
+                <span class="icon"><i class="fas fa-cloud-download-alt"></i></span>
+                <span>Open HTTP Vault Archive</span>
+              </a>
+              <a href="https://github.com/x-tpl" target="_blank" class="button is-dark is-medium">
+                <span class="icon"><i class="fab fa-github"></i></span>
+                <span>GitHub Organization &amp; Pipeline</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 
+      BibTeX Citation Section (Hidden for submission - will be un-commented upon acceptance)
+    <section class="section" id="BibTeX">
+      <div class="container is-max-desktop content">
+        <div class="bibtex-header">
+          <h2 class="title is-3" style="margin-bottom: 0 !important; padding-bottom: 0 !important;">BibTeX Citation</h2>
+          <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
+            <i class="fas fa-copy"></i>
+            <span class="copy-text">Copy</span>
+          </button>
+        </div>
+        <pre id="bibtex-code"><code>@inproceedings{FrederikXTPL,
+  author    = {Frederik, Jordi Tim and Sutter, Thomas and Kehrer, Timo},
+  title     = {X-TPL: A Ground-Truth Dataset of Cross-Platform Android Apps and their Third-Party Libraries},
+  booktitle = {Proceedings of the Tool Demonstration and Data Showcase Track},
+  url       = {https://x-tpl.github.io/},
+  doi       = {10.5281/zenodo.PLACEHOLDER}
+}</code></pre>
+      </div>
+    </section>
+    -->
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="container">
+      <div class="columns is-centered">
+        <div class="column is-8 has-text-centered">
+          <div class="content">
+            <p>
+              <strong>X-TPL</strong> is developed and maintained by the <a href="https://www.unibe.ch/" target="_blank">Software Engineering Group at the University of Bern</a>.
+            </p>
+            <p style="font-size: 0.9rem; color: var(--text-light);">
+              This website is based on the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> adopted from <a href="https://nerfies.github.io" target="_blank">Nerfies</a>.
+              The dataset and artifacts are licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/" target="_blank">Creative Commons Attribution 4.0 International License</a>.
+            </p>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
-<!-- End youtube video -->
+  </footer>
 
-
-<!-- Video carousel -->
-<section class="hero is-small">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title is-3">Another Carousel</h2>
-      <div id="results-carousel" class="carousel results-carousel">
-        <div class="item item-video1">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video1" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel1.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video2">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video2" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel2.mp4" type="video/mp4">
-          </video>
-        </div>
-        <div class="item item-video3">
-          <!-- TODO: Add poster image for better preview -->
-          <video poster="" id="video3" controls muted loop height="100%" preload="metadata">
-            <!-- Your video file here -->
-            <source src="static/videos/carousel3.mp4" type="video/mp4">
-          </video>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- End video carousel -->
-
-
-
-
-
-
-<!-- Paper poster -->
-<section class="hero is-small is-light">
-  <div class="hero-body">
-    <div class="container">
-      <h2 class="title">Poster</h2>
-
-      <!-- TODO: Replace with your poster PDF -->
-      <iframe  src="static/pdfs/sample.pdf" width="100%" height="550">
-          </iframe>
-        
-      </div>
-    </div>
-  </section>
-<!--End paper poster -->
-
-
-
-<!--BibTex citation -->
-  <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <div class="bibtex-header">
-        <h2 class="title">BibTeX</h2>
-        <button class="copy-bibtex-btn" onclick="copyBibTeX()" title="Copy BibTeX to clipboard">
-          <i class="fas fa-copy"></i>
-          <span class="copy-text">Copy</span>
-        </button>
-      </div>
-      <pre id="bibtex-code"><code>@article{YourPaperKey2024,
-  title={Your Paper Title Here},
-  author={First Author and Second Author and Third Author},
-  journal={Conference/Journal Name},
-  year={2024},
-  url={https://your-domain.com/your-project-page}
-}</code></pre>
-    </div>
-</section>
-<!--End BibTex citation -->
-
-
-  <footer class="footer">
-  <div class="container">
-    <div class="columns is-centered">
-      <div class="column is-8">
-        <div class="content">
-
-          <p>
-            This page was built using the <a href="https://github.com/eliahuhorwitz/Academic-project-page-template" target="_blank">Academic Project Page Template</a> which was adopted from the <a href="https://nerfies.github.io" target="_blank">Nerfies</a> project page.
-            You are free to borrow the source code of this website, we just ask that you link back to this page in the footer. <br> This website is licensed under a <a rel="license"  href="http://creativecommons.org/licenses/by-sa/4.0/" target="_blank">Creative
-            Commons Attribution-ShareAlike 4.0 International License</a>.
-          </p>
-
-        </div>
-      </div>
-    </div>
-  </div>
-</footer>
-
-<!-- Statcounter tracking code -->
-  
-<!-- You can add a tracker to track page visits by creating an account at statcounter.com -->
-
-    <!-- End of Statcounter Code -->
-
-  </body>
-  </html>
+</body>
+</html>
