@@ -1,0 +1,12 @@
+{
+  "name": "x-tpl-showcase",
+  "version": "1.0.0",
+  "description": "Static website for X-TPL ICSE 2027 Data Showcase",
+  "scripts": {
+    "dev": "npx live-server --port=8080 --watch=.",
+    "start": "npm run dev"
+  },
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
